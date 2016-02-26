@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\slist_wc.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_binmode.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_bname.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_dbg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_hdr.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_prg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_rea.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_see.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_wrt.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cfgable.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_convert.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_dirhie.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_doswin.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_easysrc.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_formparse.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_getparam.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_getpass.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_help.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_helpers.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_homedir.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\src\tool_hugehelp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_libinfo.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_main.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_metalink.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_mfiles.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_msgs.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_operate.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_operhlp.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_panykey.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_paramhlp.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_parsecfg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_strdup.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_setopt.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_sleep.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_urlglob.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_util.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_vms.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_writeenv.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_writeout.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_xattr.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\strtoofft.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\rawstr.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\nonblock.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\warnless.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\slist_wc.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_binmode.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_bname.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_dbg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_hdr.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_prg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_rea.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_see.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cb_wrt.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_cfgable.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_convert.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_dirhie.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_doswin.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_easysrc.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_formparse.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_getparam.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_getpass.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_help.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_helpers.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_homedir.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_hugehelp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_libinfo.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_main.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_metalink.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_mfiles.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_msgs.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_operate.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_operhlp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_panykey.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_paramhlp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_parsecfg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_sdecls.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_setopt.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_setup.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_sleep.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_strdup.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_urlglob.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_util.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_version.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_vms.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_writeenv.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_writeout.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\tool_xattr.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\4d60fa0461cc98d1cebfdb023255da46\tool_hugehelp.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E69E5752-BC52-340E-A8C5-1E07247F25B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30210795-8853-33CD-9285-B6BED8007FED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cURLX source files">
+      <UniqueIdentifier>{C8F0CC0D-42D5-3945-AC8C-330E2E9074F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cURL source files">
+      <UniqueIdentifier>{37A40A18-3370-32E8-A062-3D69706C15E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cURL header files">
+      <UniqueIdentifier>{EDB14C90-AC28-3C0A-B6A6-90AFD26FAD6D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\lib573.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\first.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\testutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\warnless.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\testtrace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\testutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\lib\warnless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\testtrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\libtest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BE91706C-7DF2-329D-8325-597FA144254E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3010D55C-7DCB-37F5-8C72-48C5128C1FAC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

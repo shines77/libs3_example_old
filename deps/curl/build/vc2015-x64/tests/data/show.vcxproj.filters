@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\tests\data\CMakeLists.txt" />
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\b5a659f89c9e8349a7c2a85c9bb69f34\show.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\tests\data\CMakeFiles\show" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{30210795-8853-33CD-9285-B6BED8007FED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

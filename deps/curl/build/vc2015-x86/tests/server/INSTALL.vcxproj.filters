@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x86\CMakeFiles\0c092f6459dcee0e2ed7c460cae92af8\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45D97245-75E0-352D-9135-03208B502400}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

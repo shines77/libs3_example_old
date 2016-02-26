@@ -76,6 +76,8 @@ Icon?
 *.bak
 
 # Ignore folders create by Visual Studio 2015
+/.vs/
+*.vs
 .vs
 
 # *.vcxproj.user
@@ -128,7 +130,7 @@ UpgradeLog.htm
 *.rar
 
 # Ignore CMake cache or temp files(folders)
-CMakeFiles
+*CMakeFiles
 *CMakeCache.txt
 
 # Ignore boost, tbb
@@ -174,5 +176,4 @@ _ReSharper*/
 /Device-Profile/
 /Device-Release/
 
-build
 build-debug

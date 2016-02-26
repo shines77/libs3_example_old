@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A0728C74-0FFE-38EF-93C0-12B7E8D1780E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\include\curl;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\include\curl;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\include\curl;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\include\curl;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Program32\CMake\bin\cmake.exe -HD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl -BD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64 --check-stamp-file D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Utilities.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Macros.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeRCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Platforms\WindowsCache.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckStructHasMember.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\OtherTests.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceRuns.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\curl-config.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\libcurl.pc.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Program32\CMake\bin\cmake.exe -HD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl -BD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64 --check-stamp-file D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Utilities.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Macros.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeRCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Platforms\WindowsCache.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckStructHasMember.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\OtherTests.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceRuns.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\curl-config.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\libcurl.pc.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Program32\CMake\bin\cmake.exe -HD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl -BD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64 --check-stamp-file D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Utilities.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Macros.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeRCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Platforms\WindowsCache.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckStructHasMember.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\OtherTests.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceRuns.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\curl-config.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\libcurl.pc.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Program32\CMake\bin\cmake.exe -HD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl -BD:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64 --check-stamp-file D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Utilities.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Macros.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\3.4.0\CMakeRCCompiler.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeRCInformation.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckFunctionExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckLibraryExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckSymbolExists.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckTypeSize.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFile.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckIncludeFileCXX.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeDependentOption.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\Platforms\WindowsCache.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindZLIB.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\FindPackageMessage.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CMakeParseArguments.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckStructHasMember.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCXXSourceCompiles.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMake\OtherTests.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceCompiles.cmake;D:\Program32\CMake\share\cmake-3.4\Modules\CheckCSourceRuns.cmake;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\curl-config.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\libcurl.pc.in;D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Project\OpenSrc\OpenStack\S3\libs3_sample\deps\curl\build\vc2015-x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64/ZERO_CHECK.vcxproj">
+      <Project>0033CC52-E050-32C4-A957-3BE6C7068445</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64/src/curl.vcxproj">
+      <Project>8B14A8E6-E5A8-3A21-A255-DA132A24C7C1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Project/OpenSrc/OpenStack/S3/libs3_sample/deps/curl/build/vc2015-x64/lib/libcurl.vcxproj">
+      <Project>DB30039A-1026-3267-BE8D-41F3B82FEDA4</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
