@@ -26,6 +26,7 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <malloc.h>
 #include "libs3.h"
 #include "request.h"
 #include "simplexml.h"
@@ -455,7 +456,11 @@ static S3Status make_list_bucket_callback(ListBucketData *lbData)
                        !strcmp(lbData->isTruncated, "1")) ? 1 : 0;
 
     // Convert the contents
+#ifdef _MSC_VER
+    S3ListBucketContent * contents = (S3ListBucketContent *)alloca(sizeof(S3ListBucketContent) * lbData->contentsCount);
+#else
     S3ListBucketContent contents[lbData->contentsCount];
+#endif
 
     int contentsCount = lbData->contentsCount;
     for (i = 0; i < contentsCount; i++) {
@@ -474,7 +479,11 @@ static S3Status make_list_bucket_callback(ListBucketData *lbData)
 
     // Make the common prefixes array
     int commonPrefixesCount = lbData->commonPrefixesCount;
-    char *commonPrefixes[commonPrefixesCount];
+#ifdef _MSC_VER
+    char ** commonPrefixes = (char **)alloca(sizeof(char *) * commonPrefixesCount);
+#else
+    char * commonPrefixes[commonPrefixesCount];
+#endif
     for (i = 0; i < commonPrefixesCount; i++) {
         commonPrefixes[i] = lbData->commonPrefixes[i];
     }

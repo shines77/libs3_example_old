@@ -26,6 +26,7 @@
 
 #include <string.h>
 #include <stdlib.h>
+#include <malloc.h>
 #include "libs3.h"
 #include "request.h"
 #include "simplexml.h"
@@ -518,7 +519,11 @@ static S3Status make_list_multipart_callback(ListMultipartData *lmData)
                        !strcmp(lmData->isTruncated, "1")) ? 1 : 0;
 
     // Convert the contents
+#ifdef _MSC_VER
+    S3ListMultipartUpload * uploads = (S3ListMultipartUpload *)alloca(sizeof(S3ListMultipartUpload) * lmData->uploadsCount);
+#else
     S3ListMultipartUpload uploads[lmData->uploadsCount];
+#endif
 
     int uploadsCount = lmData->uploadsCount;
     for (i = 0; i < uploadsCount; i++) {
@@ -538,7 +543,11 @@ static S3Status make_list_multipart_callback(ListMultipartData *lmData)
 
     // Make the common prefixes array
     int commonPrefixesCount = lmData->commonPrefixesCount;
-    char *commonPrefixes[commonPrefixesCount];
+#ifdef _MSC_VER
+    char ** commonPrefixes = (char **)alloca(sizeof(char *) * commonPrefixesCount);
+#else
+    char * commonPrefixes[commonPrefixesCount];
+#endif
     for (i = 0; i < commonPrefixesCount; i++) {
         commonPrefixes[i] = lmData->commonPrefixes[i];
     }
@@ -559,7 +568,11 @@ static S3Status make_list_parts_callback(ListPartsData *lpData)
                        !strcmp(lpData->isTruncated, "1")) ? 1 : 0;
 
     // Convert the contents
+#ifdef _MSC_VER
+    S3ListPart * Parts = (S3ListPart *)alloca(sizeof(S3ListPart) * lpData->partsCount);
+#else
     S3ListPart Parts[lpData->partsCount];
+#endif
     int partsCount = lpData->partsCount;
     for (i = 0; i < partsCount; i++) {
         S3ListPart *partDest = &(Parts[i]);

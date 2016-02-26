@@ -26,6 +26,7 @@
 
 #include <pthread.h>
 #include <sys/utsname.h>
+//#include <sysinfoapi.h>
 
 unsigned long pthread_self()
 {
@@ -69,6 +70,7 @@ int pthread_mutex_destroy(pthread_mutex_t *mutex)
 
 int uname(struct utsname *u)
 {
+#if _WIN32_WINNT < _WIN32_WINNT_WIN7
     OSVERSIONINFO info;
     info.dwOSVersionInfoSize = sizeof(info);
 
@@ -114,6 +116,9 @@ int uname(struct utsname *u)
     default:
         return -1;
     }
+#else
+    u->sysname = "Microsoft Windows 7";
+#endif
 
     return 0;
 }

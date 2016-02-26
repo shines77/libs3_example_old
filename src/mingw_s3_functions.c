@@ -24,6 +24,9 @@
  *
  ************************************************************************** **/
 
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
 int setenv(const char *a, const char *b, int c)
 {
     (void) c;

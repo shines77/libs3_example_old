@@ -27,4 +27,13 @@
 // This file is used only on a MingW build, and converts an include of
 // sys/select.h to its Windows equivalent
 
+#ifndef S3_MINGW_SELETC_H
+#define S3_MINGW_SELETC_H
+
 #include <winsock2.h>
+
+#ifdef _MSC_VER
+#pragma comment(lib, "ws2_32.lib")
+#endif
+
+#endif // !S3_MINGW_SELETC_H

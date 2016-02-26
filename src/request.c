@@ -34,9 +34,17 @@
 #include "response_headers_handler.h"
 #include "util.h"
 
+#define LIBS3_VER_MAJOR     "2"
+#define LIBS3_VER_MINOR     "0"
+#define LIBS3_VER           "2.0"
 
 #define USER_AGENT_SIZE 256
 #define REQUEST_STACK_SIZE 32
+
+#ifdef _MSC_VER
+#define gmtime_r    gmtime_s
+#endif
+
 static int verifyPeer;
 
 static char userAgentG[USER_AGENT_SIZE];
@@ -684,7 +692,7 @@ static void canonicalize_resource(const char *bucketName,
 
     *buffer = 0;
 
-#define append(str) len += sprintf(&(buffer[len]), "%s", str)
+#define append(str) len += snprintf(&(buffer[len]), len - 1, "%s", str)
 
     if (bucketName && bucketName[0]) {
         buffer[len++] = '/';
@@ -1452,7 +1460,7 @@ S3Status S3_generate_authenticated_query_string
                      sizeof("&Expires=") + 20 + 
                      sizeof("&Signature=") + sizeof(signature) + 1];
 
-    sprintf(queryParams, "AWSAccessKeyId=%s&Expires=%ld&Signature=%s",
+    snprintf(queryParams, sizeof(queryParams) - 1, "AWSAccessKeyId=%s&Expires=%ld&Signature=%s",
             bucketContext->accessKeyId, (long) expires, signature);
 
     return compose_uri(buffer, S3_MAX_AUTHENTICATED_QUERY_STRING_SIZE,

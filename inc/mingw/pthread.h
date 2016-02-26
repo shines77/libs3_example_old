@@ -30,6 +30,9 @@
 // This is a minimal implementation of pthreads on Windows, implementing just
 // the APIs needed by libs3
 
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
 unsigned long pthread_self();
 
 typedef struct

@@ -35,12 +35,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <strings.h>
+//#include <strings.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <time.h>
-#include <unistd.h>
+//#include <unistd.h>
+
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
 #include "libs3.h"
+
+#if defined(_WIN64) || defined(WIN64)
+#  if defined(_DEBUG) && !defined(NDEBUG)
+#    pragma comment(lib, "x64\\libs3-x64-Debug.lib")
+#  else
+#    pragma comment(lib, "x64\\libs3-x64-Release.lib")
+#  endif
+#elif defined(_WIN32) || defined(WIN32) || defined(_WINDOWS)
+#  if defined(_DEBUG) && !defined(NDEBUG)
+#    pragma comment(lib, "x86\\libs3-x86-Debug.lib")
+#  else
+#    pragma comment(lib, "x86\\libs3-x86-Release.lib")
+#  endif
+#else
+// Linux or another OS
+// Do nothing!!
+#endif
 
 // Some Windows stuff
 #ifndef FOPEN_EXTRA_FLAGS
@@ -53,7 +74,9 @@
 #endif
 
 // Also needed for Windows, because somehow MinGW doesn't define this
+#if defined(__MINGW__) || defined(__MINGW32__)
 extern int putenv(char *);
+#endif
 
 
 // Command-line options, saved as globals ------------------------------------
@@ -724,7 +747,12 @@ static int should_retry()
     if (retriesG--) {
         // Sleep before next retry; start out with a 1 second sleep
         static int retrySleepInterval = 1 * SLEEP_UNITS_PER_SECOND;
+#if defined(_MSC_VER) || defined(_WIN32) || defined(WIN32) || defined(_WINDOWS) || defined(WINDOWS) \
+    || defined(__INTEL_COMPILER) || defined(__ICL) || defined(__MINGW__)
+        Sleep(retrySleepInterval);
+#else
         sleep(retrySleepInterval);
+#endif
         // Next sleep 1 second longer
         retrySleepInterval++;
         return 1;

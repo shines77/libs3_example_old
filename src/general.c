@@ -376,14 +376,14 @@ static S3Status convertAclXmlCallback(const char *elementPath,
 
             if (caData->emailAddress[0]) {
                 grant->granteeType = S3GranteeTypeAmazonCustomerByEmail;
-                strcpy(grant->grantee.amazonCustomerByEmail.emailAddress,
-                       caData->emailAddress);
+                strncpy(grant->grantee.amazonCustomerByEmail.emailAddress,
+                       caData->emailAddress, sizeof(caData->emailAddress) - 1);
             }
             else if (caData->userId[0] && caData->userDisplayName[0]) {
                 grant->granteeType = S3GranteeTypeCanonicalUser;
-                strcpy(grant->grantee.canonicalUser.id, caData->userId);
-                strcpy(grant->grantee.canonicalUser.displayName, 
-                       caData->userDisplayName);
+                strncpy(grant->grantee.canonicalUser.id, caData->userId, sizeof(caData->userId) - 1);
+                strncpy(grant->grantee.canonicalUser.displayName, 
+                       caData->userDisplayName, sizeof(caData->userDisplayName) - 1);
             }
             else if (caData->groupUri[0]) {
                 if (!strcmp(caData->groupUri,

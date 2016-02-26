@@ -80,7 +80,12 @@ static void saxStartElement(void *user_data, const xmlChar *nameUtf8,
     if (simpleXml->elementPathLen) {
         simpleXml->elementPath[simpleXml->elementPathLen++] = '/';
     }
-    strcpy(&(simpleXml->elementPath[simpleXml->elementPathLen]), name);
+#if defined(_MSC_VER) || defined(_WIN32) || defined(WIN32) || defined(_WINDOWS) || defined(WINDOWS) \
+    || defined(__INTEL_COMPILER) || defined(__ICL) || defined(__MINGW__)
+    strncpy_s(&(simpleXml->elementPath[simpleXml->elementPathLen]), sizeof(simpleXml->elementPath) - 1, name, len);
+#else
+    strncpy(&(simpleXml->elementPath[simpleXml->elementPathLen]), name, len);
+#endif
     simpleXml->elementPathLen += len;
 }
 
@@ -134,7 +139,39 @@ static void saxError(void *user_data, const char *msg, ...)
     simpleXml->status = S3StatusXmlParseFailure;
 }
 
-
+#if _MSC_VER
+static struct _xmlSAXHandler saxHandlerG =
+{
+    0, // internalSubsetSAXFunc
+    0, // isStandaloneSAXFunc
+    0, // hasInternalSubsetSAXFunc
+    0, // hasExternalSubsetSAXFunc
+    0, // resolveEntitySAXFunc
+    &saxGetEntity, // getEntitySAXFunc
+    0, // entityDeclSAXFunc
+    0, // notationDeclSAXFunc
+    0, // attributeDeclSAXFunc
+    0, // elementDeclSAXFunc
+    0, // unparsedEntityDeclSAXFunc
+    0, // setDocumentLocatorSAXFunc
+    0, // startDocumentSAXFunc
+    0, // endDocumentSAXFunc
+    &saxStartElement, // startElementSAXFunc
+    &saxEndElement, // endElementSAXFunc
+    0, // referenceSAXFunc
+    &saxCharacters, // charactersSAXFunc
+    0, // ignorableWhitespaceSAXFunc
+    0, // processingInstructionSAXFunc
+    0, // commentSAXFunc
+    0, // warningSAXFunc
+    &saxError, // errorSAXFunc
+    &saxError, // fatalErrorSAXFunc
+    0, // getParameterEntitySAXFunc
+    &saxCharacters, // cdataBlockSAXFunc
+    0, // externalSubsetSAXFunc
+    0  // initialized
+};
+#else
 static struct _xmlSAXHandler saxHandlerG =
 {
     0, // internalSubsetSAXFunc
@@ -170,6 +207,7 @@ static struct _xmlSAXHandler saxHandlerG =
     0, // endElementNsSAX2Func
     0 // xmlStructuredErrorFunc serror;
 };
+#endif
 
 void simplexml_initialize(SimpleXml *simpleXml, 
                           SimpleXmlCallback *callback, void *callbackData)
