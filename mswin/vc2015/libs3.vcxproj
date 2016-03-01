@@ -176,7 +176,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x86\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win32\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -191,7 +191,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x64\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win64\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -210,7 +210,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x86\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win32\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
@@ -229,7 +229,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x86\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win32\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
@@ -248,7 +248,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x86\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win32\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x86\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -267,7 +267,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x64\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win64\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
@@ -286,7 +286,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x64\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win64\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
@@ -305,7 +305,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>..\..\deps\curl\build\vc2015-x64\lib\Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
+      <AdditionalDependencies>wldap32.lib;..\..\deps\curl\build\Win64\VC14\LIB Release\libcurl.lib;..\..\deps\libxml2\win32\vc2015\libxml2\x64\libxml2_a.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>

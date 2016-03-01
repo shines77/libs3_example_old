@@ -116,6 +116,7 @@ IcUpdateLog.htm
 
 # Ignore Visual Studio 2013 temp files
 *.tlog
+*.dir
 
 # Ignore Visual Studio C# files
 *.cache
@@ -139,6 +140,7 @@ UpgradeLog.htm
 
 # Ignore tmp and obj folders
 [Bb]in
+[Oo]bj
 [Oo]bj/
 /[Oo]bj/
 /[Gg]en/
@@ -157,9 +159,9 @@ UpgradeLog.htm
 /x64-[Rr]elease/
 !/deps/
 
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
+# [Bb]in
+# [Dd]ebug*/
+# [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
 
@@ -177,3 +179,7 @@ _ReSharper*/
 /Device-Release/
 
 build-debug
+
+libs3-*.lib
+libcurl*.lib
+libxml*.lib
